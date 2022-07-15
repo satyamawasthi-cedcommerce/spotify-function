@@ -1,38 +1,439 @@
 .App {
-  text-align: center;
+  font-family: 'Signika', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navspotify{
+  background-color: #000000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Navbrand{
+  font-size: largeer;
+  color:white;
+  word-spacing: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#list{
+  color:white;
+}
+#maincontent{
+  width:100%;
+  background-color: #3F55E2;
+}
+#mainheading{
+  padding-top: 10%;
+}
+#subhead{
+  padding-top: 2%;
+}
+#btn1 {
+  font-size: medium;
+  background-color: #000000;
+  color:white;
+  border: none;
+  
+  padding: 15px;
+}
+#btn2{
+  font-size: medium;
+  background-color: #3F55E2;
   color: white;
+  margin-left: 2%;
+  border: 2px solid white;
+  
+  padding: 15px;
+
+}
+.btnclass{
+  padding-top: 2%;
+}
+#tandc{
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+#btn3{
+  font-size: medium;
+  background-color: white;
+  color:Black;
+  margin-left: 2%;
+  /* border: 2px solid white; */
+  
+  padding: 15px;
+}
+#footcontent{
+  width:100%;
+  background-color:Black;
+}
+p{
+  margin: 0;
+}
+#features{
+  width:100%;
+  background-color:white;
+
+}
+#mainheadin{
+  padding-top: 10%;
+  color:balck;
+}
+.flex-container {
+  display: flex;
+ padding-top: 5%;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-container > div {
+  /* background-color: ; */
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+#f1{
+  margin-left: 3%;
+}
+.image{
+  border-radius: 50%;
+  width:100%;
+}
+.headcategory{
+  padding-top: 15%;
+}
+.para{
+  font-size: small;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#Category{
+  width:100%;
+  background-color:black;
+}
+#cat{
+  background-color: #000000;
+}
+.image1{
+  width: 70%;
+}
+#plans{
+  width:100%;
+  background-color:white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  /* text-align: center; */
+  background-color: #f1f1f1;
+}
+#cardDiv{
+  padding-top: 5%;
+}
+#flex{
+  display: flex;
+}
+#flex2{
+  display: flex;
+}
+#flex3{
+  display: flex;
+}
+#flex4{
+  display: flex;
+}
+#btn5{
+width:50%;
+margin-bottom: 1%;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	/* background-color: #2c292f; */
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	/* background-color:  #33383b; */
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	/* background-color:  #33383b; */
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+#accordionFlushExample{
+	padding: 3%;
+}
+#footerDiv{
+	background-color: #000000;
+	width:100%;
+}
+.foot {
+	width: 80%;
+	margin: 3% 10% 2%;
+	padding: 0% 0 0%;
+	display: flex;
+	justify-content: space-between;
+  }
+
+  .foot > h3,
+  p {
+	cursor: pointer;
+  }
+  
+  .footerContent {
+	width: 20%;
+	text-align: left;
+  }
+  .footerContent h3 {
+	font-size: 1.2vw;
+	color: #bcbaba;
+	padding-top: 15%;
+	font-weight: 950;
+	letter-spacing: 1px;
+  }
+  .footerContent i {
+	color: #ffffff;
+	background-color: #222326;
+	padding: 8px;
+	font-weight: 300;
+	width: 30px;
+	height: 32px;
+	border-radius: 50%;
+	margin: 4% 0 4%;
+  }
+  .footerContent p {
+	font-weight: 400;
+	padding: 5% 0 2%;
+	font-weight: 600;
+	margin: 0 3% 0;
+  }
+  .footerContent img {
+	width: 60%;
+  }
+  
+  .lowerFoot {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 0 2%;
+	width: 80%;
+	margin: 3% 10% 2%;
+  }
+  .lowerLeft {
+	display: flex;
+	/* justify-content: space-evenly; */
+  }
+  .lowerLeft p {
+
+	color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0 1% 0;
+  }
+  .lowerRight p {
+	color: white;
+	font-weight: 400;
+  }
+  
+  
+  
